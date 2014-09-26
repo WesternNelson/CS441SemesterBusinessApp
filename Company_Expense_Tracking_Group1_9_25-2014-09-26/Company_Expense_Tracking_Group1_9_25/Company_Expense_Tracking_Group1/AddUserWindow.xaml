@@ -1,0 +1,19 @@
+﻿<Window x:Class="Company_Expense_Tracking_Group1.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddUserWindow" Height="525" Width="476">
+    <Grid>
+        <Button x:Name="AddUser_Button" Content="Add User" HorizontalAlignment="Left" Height="48" Margin="180,387,0,0" VerticalAlignment="Top" Width="140" Click="AddUser_Button_Click"/>
+        <Label x:Name="FirstName_Label" Content="First Name:" HorizontalAlignment="Left" Height="35" Margin="51,71,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="UserPassword_Label" Content="Password:" HorizontalAlignment="Left" Height="35" Margin="51,309,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="UserName_Label" Content="User Name:" HorizontalAlignment="Left" Height="35" Margin="51,243,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="Email_Label" Content="Email:" HorizontalAlignment="Left" Height="35" Margin="51,187,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="LastName_Label" Content="Last Name:" HorizontalAlignment="Left" Height="35" Margin="51,131,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="FirstName_TextBox" HorizontalAlignment="Left" Height="35" Margin="180,71,0,0" TextWrapping="Wrap" Text="John" VerticalAlignment="Top" Width="267" TextChanged="FirstName_TextBox_TextChanged"/>
+        <TextBox x:Name="Password_TextBox" HorizontalAlignment="Left" Height="35" Margin="180,309,0,0" TextWrapping="Wrap" Text="********" VerticalAlignment="Top" Width="267" TextChanged="Password_TextBox_TextChanged"/>
+        <TextBox x:Name="UserName_TextBox" HorizontalAlignment="Left" Height="35" Margin="180,243,0,0" TextWrapping="Wrap" Text="JSmith111" VerticalAlignment="Top" Width="267" TextChanged="UserName_TextBox_TextChanged"/>
+        <TextBox x:Name="Email_Textbox" HorizontalAlignment="Left" Height="35" Margin="180,187,0,0" TextWrapping="Wrap" Text="Jsmith@Gmail.com" VerticalAlignment="Top" Width="267" TextChanged="Email_Textbox_TextChanged"/>
+        <TextBox x:Name="LastName_TextBox" HorizontalAlignment="Left" Height="35" Margin="180,131,0,0" TextWrapping="Wrap" Text="Smith" VerticalAlignment="Top" Width="267" TextChanged="LastName_TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
