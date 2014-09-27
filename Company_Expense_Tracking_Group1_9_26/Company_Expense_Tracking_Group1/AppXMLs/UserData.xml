@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>
+  <user id = "1">
+    <first-name>Western</first-name>
+    <last-name>Nelson</last-name>
+    <login>
+      <username>kobe5</username>
+      <password>kobekobe123</password>
+    </login>
+    <last-login-date>
+      <month>09</month>
+      <day>15</day>
+      <year>2014</year>
+    </last-login-date>
+    <admin-rights>yes</admin-rights>
+    <authentication-right>yes</authentication-right>
+  </user>
+</users>

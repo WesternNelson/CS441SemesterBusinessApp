@@ -1,0 +1,17 @@
+﻿<Window x:Name="AddExpenseWindow1" x:Class="Company_Expense_Tracking_Group1.AddExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddExpenseWindow" Height="543" Width="409">
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Height="33" Margin="88,102,0,0" VerticalAlignment="Top" Width="233"/>
+        <Label x:Name="Category_Label" Content="Select a Category" HorizontalAlignment="Left" Height="33" Margin="88,64,0,0" VerticalAlignment="Top" Width="233"/>
+        <TextBox x:Name="Amount_Input_TextBox" HorizontalAlignment="Left" Height="45" Margin="88,204,0,0" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Top" Width="233"/>
+        <Label x:Name="Amount_Input_Label" Content="Please enter the amount of the Expense" HorizontalAlignment="Left" Height="35" Margin="88,169,0,0" VerticalAlignment="Top" Width="233"/>
+        <Label x:Name="Date_Input_Label_Copy" Content="Please enter the Date of the Expense" HorizontalAlignment="Left" Height="35" Margin="88,275,0,0" VerticalAlignment="Top" Width="233"/>
+        <TextBox x:Name="Date_Input_TextBox_Copy" HorizontalAlignment="Left" Height="45" Margin="88,323,0,0" TextWrapping="Wrap" Text="mm/dd/yyyy" VerticalAlignment="Top" Width="233"/>
+        <Button x:Name="Add_Expense_Button" Content="Add Expense" HorizontalAlignment="Left" Height="39" Margin="120,403,0,0" VerticalAlignment="Top" Width="172" Click="Add_Expense_Button_Click"/>
+        <Button x:Name="Veiw_Expense_Button" Content="View Expenditures" HorizontalAlignment="Left" Height="39" Margin="120,463,0,0" VerticalAlignment="Top" Width="172" Click="Veiw_Expense_Button_Click"/>
+        <Label x:Name="Date_Time" Content="Label" HorizontalAlignment="Left" Margin="185,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.474,-1.5"/>
+
+    </Grid>
+</Window>

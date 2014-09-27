@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="expenses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="expense">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="amount" type="xs:string" />
+              <xs:element name="date">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="month" type="xs:unsignedByte" />
+                    <xs:element name="day" type="xs:unsignedByte" />
+                    <xs:element name="year" type="xs:unsignedShort" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="category" type="xs:string" />
+              <xs:element name="milage">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="milage-enabled" type="xs:string" />
+                    <xs:element name="milage-number" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="show">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="show-all" type="xs:string" />
+                    <xs:element name="totals">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="amount" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="time-frame" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="number-id" type="xs:unsignedByte" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

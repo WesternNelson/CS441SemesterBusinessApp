@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="web-app">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="window">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="window-name" type="xs:string" />
+              <xs:element name="session-id" type="xs:unsignedByte" />
+              <xs:element name="windows-os" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="profile">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="first-name" type="xs:string" />
+              <xs:element name="last-name" type="xs:string" />
+              <xs:element name="user">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="username" type="xs:string" />
+                    <xs:element name="password" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="last-login-date">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="month" type="xs:unsignedByte" />
+                    <xs:element name="day" type="xs:unsignedByte" />
+                    <xs:element name="year" type="xs:unsignedShort" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="global">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="time" type="xs:string" />
+              <xs:element name="date">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="month" type="xs:unsignedByte" />
+                    <xs:element name="day" type="xs:unsignedByte" />
+                    <xs:element name="year" type="xs:unsignedShort" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="expenses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="amount" type="xs:string" />
+              <xs:element name="date">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="month" type="xs:unsignedByte" />
+                    <xs:element name="day" type="xs:unsignedByte" />
+                    <xs:element name="year" type="xs:unsignedShort" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="category" type="xs:string" />
+              <xs:element name="milage">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="milage-enabled" type="xs:string" />
+                    <xs:element name="milage-number" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="show">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="show-all" type="xs:string" />
+                    <xs:element name="totals">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="amount" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="time-frame" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="number-id" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id-report" type="xs:unsignedByte" />
+              <xs:element name="type-report" type="xs:string" />
+              <xs:element name="expense-report">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="time-frame-report" type="xs:string" />
+                    <xs:element name="category">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="number-categories" type="xs:unsignedByte" />
+                          <xs:element name="all-categories" type="xs:string" />
+                          <xs:element name="name-category" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="activity-Report">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="isAdmin" type="xs:string" />
+                    <xs:element name="user" type="xs:string" />
+                    <xs:element name="history">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="entries">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="number-users" type="xs:unsignedByte" />
+                                <xs:element name="all-users" type="xs:string" />
+                                <xs:element name="number-entries" type="xs:unsignedByte" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

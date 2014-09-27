@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<web-app>
+  <window>
+    <window-name>Helloworld xml window</window-name>
+    <session-id>00000001</session-id>
+    <windows-os>7</windows-os>
+  </window>
+
+  <profile>
+    <first-name>Western</first-name>
+    <last-name>Nelson</last-name>
+    <user>
+      <username>kobe5</username>
+      <password>kobekobe123</password>  
+    </user>  
+    <last-login-date>
+      <month>09</month>
+      <day>15</day>
+      <year>2014</year>
+    </last-login-date> 
+  </profile>
+
+  <global>
+    <time>07:00</time>
+    <date>
+      <month>09</month>
+      <day>15</day>
+      <year>2000</year>
+    </date>
+  </global>
+
+  <expenses>
+    <amount>$3333.00</amount>
+    <date>
+      <month>09</month>
+      <day>15</day>
+      <year>2000</year>
+    </date>
+    <category>incurance</category>
+    <milage>
+      <milage-enabled>no</milage-enabled>
+      <milage-number>321.21</milage-number>
+    </milage>
+    <show>
+      <show-all>no</show-all>
+      <totals>
+        <amount>$3333.00</amount>
+      </totals>
+      <time-frame>07:00-09:00</time-frame>
+    </show>
+    <number-id>15</number-id>
+  </expenses>
+
+  <report>
+    <id-report>15</id-report>
+    <type-report>expense</type-report>
+    <expense-report>
+      <time-frame-report>07:00-09:00</time-frame-report>
+      <category>
+        <number-categories>1</number-categories>
+        <all-categories>no</all-categories>
+        <name-category>black</name-category>
+      </category>
+    </expense-report>
+    <activity-Report>
+      <isAdmin>no</isAdmin>
+      <user>employee_name</user>
+      <history>
+        <entries>
+          <number-users>7</number-users>
+          <all-users>no</all-users>
+          <number-entries>5</number-entries>
+        </entries>
+      </history>
+    </activity-Report>
+  </report>
+
+</web-app>
+

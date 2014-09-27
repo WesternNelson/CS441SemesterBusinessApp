@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<expenses>
+  <expense id = "1">
+    <amount>$3333.00</amount>
+    <date>
+      <month>09</month>
+      <day>15</day>
+      <year>2000</year>
+    </date>
+    <category>incurance</category>
+    <milage>
+      <milage-enabled>no</milage-enabled>
+      <milage-number>321.21</milage-number>
+    </milage>
+    <show>
+      <show-all>no</show-all>
+      <totals>
+        <amount>$3333.00</amount>
+      </totals>
+      <time-frame>07:00-09:00</time-frame>
+    </show>
+    <number-id>15</number-id>
+  </expense>
+</expenses>
